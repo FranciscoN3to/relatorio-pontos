@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.container-relatorio {
+    max-height: 520px;
+    overflow: hidden;
+    margin-top: 30px;
+    height: 300px; 
+    background-color: rgba(0,0,255,.1) 
+}
