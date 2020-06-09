@@ -11,14 +11,6 @@ const state = {
         start: '2020-08-20',
         end: '2020-08-21'
     },
-    employeesList: {
-        20: {
-            id: 20,
-            nome: 'francisco',
-            ...
-        },
-        ...
-    },
     macros: {
         20: {
             '2020-08-20': {

@@ -7,7 +7,7 @@ const INITIAL_STATE = {
     error: false
 }
  
-function macros(state = INITIAL_STATE, action) {
+export default function Macros(state = INITIAL_STATE, action) {
     switch(action.type) {
         case ADD_MACRO:
             return {
@@ -37,6 +37,7 @@ function macros(state = INITIAL_STATE, action) {
             }
         case MACRO_SUCCESS:
             return {
+                ...state,
                 macros: {
                     ...joinNewCycle(state, action)
                 },

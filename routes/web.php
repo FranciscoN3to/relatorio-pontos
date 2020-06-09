@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+/*
+Route::get('/', 'MacrosController@index');
+
+Route::get('/relatorio/gerencial', function(){
+    
+    return view('relatorio/gerencial');
+
+});
+*/
