@@ -12,5 +12,5 @@
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./relatorio/gerencial');
+require('./app/');
  
