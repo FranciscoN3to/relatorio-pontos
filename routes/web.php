@@ -16,6 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/relatorio/gerencial', function () {
+    return view('index');
+});
+
+/* rout params
+Route::get('/{id}', function () {
+    return view('index');
+});
 /*
 Route::get('/', 'MacrosController@index');
 
