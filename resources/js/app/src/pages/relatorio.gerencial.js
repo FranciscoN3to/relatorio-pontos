@@ -1,6 +1,6 @@
 import React from 'react'
 import Moment from 'moment'
-import useQuery from '../services/getQuery'
+import useQuery from '../functions/getQuery'
 
 
 export default () => {
