@@ -11,7 +11,18 @@
  *      Calcular total ad noturno.
  *      Calcular total banco de horas.
  */
+import ListPeriodo from '../../../functions/listStartToEndPeriodo'
+import OrdernarMacros from "./ordenar.macros"
+import SepararCiclos from './separar.ciclos.jornadas'
+import FecharCiclos from "./fechar.ciclos.jornada"
 
-export default () => {
- 
+export default (periodo) => {
+
+    //buscar macros no cache
+
+    const periodoList = ListPeriodo(periodo.start, periodo.end)
+    const macrosOrdenadas = OrdernarMacros(periodoList, allMacros)
+    const ciclosFechados = FecharCiclos(macrosOrdenadas)
+    const separarJornadas = SepararCiclos(ciclosFechados)
+
 }
